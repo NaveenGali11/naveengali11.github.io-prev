@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Welcome | NaveenGali's Portfolio Website</title>
+    <title>NaveenGali's Portfolio Website</title>
     <link rel="icon" type="icon/ico" href="Images%20of%20projects/portfolio%20logo.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet"
@@ -19,6 +19,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+
+    <!-- Link to Typed Js Style Sheet -->
+    <link rel="stylesheet" href="typedjs.css" type="text/css">
 
     <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101314308);</script>
     <script async src="//static.getclicky.com/js"></script>
@@ -52,8 +58,19 @@
 </nav>
 <header class="d-flex masthead" style="background-image:url('assets/img/bg-masthead.jpg');">
     <div class="container text-center my-auto">
-        <h3 class="mb-5" style="margin-bottom: 20px;font-family: 'Book Antiqua'">Welcome to </h3>
-        <h1 class="mb-1" style="font-family: cursive;padding-top: 10px;margin-top: 0px">NaveenGali's Portfolio</h1>
+        <!-- margin-bottom: 20px -->
+        <h3 class="mb-1" style="font-family: 'margin-bottom: 20px;Book Antiqua'">Welcome to </h3> 
+        <!-- padding-top: 10px; -->
+        <h1 class="mb-1" style="padding-top: 10px;;font-family: cursive;margin-top: 0px">NaveenGali's Portfolio</h1>
+        <div class="heading">
+            <h1 style="font-family: 'Reggae One', cursive;">I am
+                <span class="text-slider-items">
+                    A Student, A Java Developer, A Web Developer
+                </span>
+
+                <strong class="text-slider"></strong>
+            </h1>
+        </div>
         <a class="btn btn-primary btn-xl js-scroll-trigger" role="button" href="#about" style="margin-top: 20px">Find
             Out More</a>
         <div class="overlay"></div>
@@ -212,6 +229,34 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 <script src="assets/js/stylish-portfolio.js"></script>
 <script src="assets/js/Dark-Mode-Switch.js"></script>
+
+<script src=
+"./typed.js-master/lib/typed.min.js">
+</script>
+
+<!-- Add jquery cdn -->
+<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+
+<!-- Add this script for successful
+implementation of typed.js -->
+<script>
+if ($(".text-slider").length == 1) {
+    
+    var typed_strings =
+        $(".text-slider-items").text();
+
+    var typed = new Typed(".text-slider", {
+        strings: typed_strings.split(", "),
+        typeSpeed: 50,
+        loop: true,
+        backDelay: 900,
+        backSpeed: 30,
+    });
+}
+</script>
+
 </body>
 
 </html>
