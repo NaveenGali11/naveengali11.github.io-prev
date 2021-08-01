@@ -1,6 +1,7 @@
 .text-slider-items {
     display: none;
     font-family: 'Dancing Script', cursive;
+    /*font-family: 'MonteCarlo', cursive;*/
 }
 
 .heading {
@@ -9,7 +10,8 @@
 
 .heading h1 {
     color: red;
-    font-size: 70px;
+    font-size: 50px;
+    font-family: 'MonteCarlo', cursive;
 }
 
 .heading h3 {

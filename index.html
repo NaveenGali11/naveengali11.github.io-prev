@@ -26,11 +26,12 @@
     <!-- Font Link -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet">
     <!-- Link to Typed Js Style Sheet -->
     <link rel="stylesheet" href="typedjs.css" type="text/css">
 
-    <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101314308);</script>
+    <script>const clicky_site_ids = clicky_site_ids || [];
+    clicky_site_ids.push(101314308);</script>
     <script async src="//static.getclicky.com/js"></script>
 </head>
 
@@ -44,7 +45,9 @@
                     Portfolio</a></li>
                 <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#page-top">Home</a>
                 </li>
-                <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#about">Resume</a>
+                <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#internship">Current Position</a>
+                </li>
+                <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#resume">Resume</a>
                 </li>
                 <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                 <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger"
@@ -52,9 +55,6 @@
                 <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger"
                                                          href="#portfolio">Portfolio</a></li>
                 <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-                </li>
-                <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#recent">Recent Projects</a>
-
                 </li>
             </ul>
         </div>
@@ -68,8 +68,8 @@
         <h1 class="mb-1" style="padding-top: 10px;;font-family: cursive;margin-top: 0px">NaveenGali's Portfolio</h1>
         <div class="heading">
             <h1 style="font-family: 'Reggae One', cursive;">I am
-                <span class="text-slider-items">
-                    A Student, A Java Developer, A Web Developer
+                <span class="text-slider-items" style="font-family: 'MonteCarlo', cursive;">
+                    A Student, A Java Developer, A Web Developer, A React Developer, A Native App Developer
                 </span>
 
                 <strong class="text-slider"></strong>
@@ -93,11 +93,15 @@
         <div class="row">
             <div class="col-lg-10 mx-auto">
                 <h1 style="font-family: 'Original Surfer', cursive;">NaveenGali</h1>
-                <p class="lead mb-5"><span>2nd Year Student at Bharath University in Chennai.<br>Java and Web Development Enthusiast worked on various Programs for various Hackathons.</span>
+                <p class="lead mb-5"><span>3rd Year Student at Bharath University in Chennai.<br>Java and React Development Enthusiast worked on various Programs for various Hackathons.</span>
                 </p><a class="btn btn-dark btn-xl js-scroll-trigger" role="button" href="#services">What We Offer</a>
-                <a class="btn btn-danger btn-xl js-scroll-trigger" role="button" href="PDF/NaveenGali_InternshalaResume.pdf" target="_blank">Resume</a>
             </div>
         </div>
+    </div>
+</section>
+<section class="text-white bg-success content-section" id="internship">
+    <div class="container text-center">
+        <h2 class="mb-4">Currently Working as a Web Application Development Intern at  <a href="http://inventgrid.in/">InventGrid</a> </h2>
     </div>
 </section>
 <section class="text-center text-white bg-primary content-section" id="services">
@@ -117,23 +121,21 @@
                 <h4><strong>Java</strong></h4>
                 <p class="mb-0 text-faded">Can Create java <br> Command line application as well as JavaFx apps.</p>
             </div>
-            <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3"><i
-                    class="bi bi-book"></i></span>
-                <h4><strong>Learn Together!</strong></h4>
-                <p class="mb-0 text-faded">Let's Learn together and contribute to <br>projects.</p>
+            <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3"><i  class="fab fa-react"></i></span>
+                <h4><strong>React Development</strong></h4>
+                <p class="mb-0 text-faded">Hazzle free Web Apps development</p>
             </div>
             <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3"><i
-                    class="bi bi-journal-code"></i></span>
-                <h4><strong>Code Together</strong></h4>
-                <p class="mb-0 text-faded">Let's Code Together on Projects</p>
+                    class="fab fa-android"></i></span>
+                <h4><strong>Native App Development</strong></h4>
+                <p class="mb-0 text-faded">Native App Development using React Native</p>
             </div>
         </div>
     </div>
 </section>
-<section class="callout bg-success">
-    <div class="container text-center">
-        <h2 class="mx-auto mb-3">Want to Collab! with me for projects and learning together.</h2><a
-            class="btn btn-dark btn-xl js-scroll-trigger" role="button" href="#contact">Contact Me!</a>
+<section class="callout bg-success" style="padding-top: 20px;padding-bottom: 20px" id="resume">
+    <div class="container">
+        <object data="PDF/NaveenGali_Resume.pdf" style="width: 100%;height:600px;margin-top: 20px;margin-bottom: 20px;padding-top: 20px" ></object>
     </div>
 </section>
 <section id="portfolio" class="content-section bg-danger">
@@ -144,6 +146,26 @@
             <h1>More Projects in <a href="https://github.com/NaveenGali11">Github</a> Account.<span>&#128512</span></h1>
         </div>
         <div class="row no-gutters">
+            <div class="col-lg-6"><a class="portfolio-item" href="https://chat-web-app-fccf6.web.app"
+                                     target="_blank">
+                <div class="caption">
+                    <div class="caption-content">
+                        <h1 style="color: #ff3446">Chat App</h1><br>
+                        <p class="mb-0" style="color: blue">Chat App made in React and FireBase</p>
+                    </div>
+                </div>
+                <img class="img-fluid" src="./Images%20of%20projects/ChatApp.jpeg" alt="Chat App">
+            </a></div>
+            <div class="col-lg-6"><a class="portfolio-item" href="http://tictactoebynaveen.surge.sh/"
+                                     target="_blank">
+                <div class="caption">
+                    <div class="caption-content">
+                        <h1 style="color: #ff3446">Tic Tac Toe</h1><br>
+                        <p class="mb-0">Game made using React</p>
+                    </div>
+                </div>
+                <img class="img-fluid" src="./Images%20of%20projects/TicTacToe.jpeg" alt="F.C.HealthCare Project">
+            </a></div>
             <div class="col-lg-6"><a class="portfolio-item" href="https://devfolio.co/submissions/fc-health-care"
                                      target="_blank">
                 <div class="caption">
@@ -187,16 +209,8 @@
         </div>
     </div>
 </section>
-<section class="text-white bg-primary content-section" id="team">
-    <div class="container text-center">
-        <h2 class="mb-4">Found a Team of 4 and going to start working on a project. <span>&#9989;</span></h2>
-    </div>
-</section>
-<section class="text-white bg-success content-section" id="recent">
-    <div class="container text-center">
-        <h2 class="mb-4">Planning a Team Project and will be updated very soon. <span>&#128352;</span></h2>
-    </div>
-</section>
+
+
 <footer class="text-center footer">
     <div class="container" id="contact">
         <ul class="list-inline mb-6">
